@@ -1,1 +1,0 @@
-# responsive-digital.devices_store
