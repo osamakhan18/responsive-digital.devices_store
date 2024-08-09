@@ -58,7 +58,7 @@ nav i{
     margin-top: 50px;
     width: 100%;
     height: 200px;
-    background-color: brown;
+   
     padding-top: 20px;
 }
 
@@ -74,12 +74,25 @@ nav i{
     width: 800px;
     height:200px ;
     object-fit: cover;
+    display:flex;
+    justify-content:space-between;
+    background-color: rgb(52, 116, 116);
+    border-radius: 20px;
 }
 
 .main-pic img{
-    width: 100%;
-    height: 100%;
+    width: 400px;
+    height: 200px;
     /* object-fit: cover; */
+}
+
+.main-pic_h1{
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 100px;
+   color:antiquewhite;
+
 }
 .links{
     width: 300px;
@@ -270,4 +283,88 @@ footer img{
 
 footer h4{
     margin-top: 20px;
+}
+
+
+
+
+@media only screen and (max-width: 450px) {
+
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    nav input {
+        width: 90%;
+    }
+
+    .main-pic {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .main-pic img {
+        width: 100%;
+        height: auto;
+    }
+
+    .links-image {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .links {
+        width: 90%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .smart-phones {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .phone {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .laptop-main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .laptop {
+        width: 90%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .watches-main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .smartwatch {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .smartwatch img {
+        width: 100%;
+        height: auto;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+    }
+
+    footer img {
+        margin-bottom: 10px;
+    }
 }
